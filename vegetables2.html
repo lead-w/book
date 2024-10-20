@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fruits & Vegetables</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- //font-awesome icons -->
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<link
+		href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+</head>
+
+<body>
+	<!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="#">Today's special Offers !</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';"
+					onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<!-- <div class="product_list_header">
+			<div style="cursor: pointer;">
+				<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><i
+						class="badge badge-notify my-cart-badge"></i></span>
+			</div>
+		</div> -->
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"
+							aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<!-- <ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">登录</a></li>
+								<li><a href="login.html">注册</a></li>
+							</ul> -->
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="w3l_header_right1">
+			<h2><a href="mail.html">Contact Us</a></h2>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!-- script-for sticky-nav -->
+	<script>
+		$(document).ready(function () {
+			var navoffeset = $(".agileits_header").offset().top;
+			$(window).scroll(function () {
+				var scrollpos = $(window).scrollTop();
+				if (scrollpos >= navoffeset) {
+					$(".agileits_header").addClass("fixed");
+				} else {
+					$(".agileits_header").removeClass("fixed");
+				}
+			});
+
+		});
+	</script>
+	<!-- //script-for sticky-nav -->
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span></span> Book</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+
+					<li><a href="about.html">关于我们</a><i>/</i></li>
+
+
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>（+0126）5201314</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a
+							href="mailto:Book@reading.com">Book@reading.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>人文科学</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //products-breadcrumb -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="w3l_banner_nav_left">
+			<nav class="navbar nav_bottom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+						data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">主题<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="vegetables.html">自然科学</a></li>
+										<li><a href="vegetables.html">社会科学</a></li>
+										<li><a href="vegetables2.html">人文科学</a></li>
+										<li><a href="#">艺术与文学</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">形式<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="vegetables.html">书籍</a></li>
+										<li><a href="vegetables.html">期刊</a></li>
+										<li><a href="vegetables.html">论文</a></li>
+										<li><a href="vegetables.html">报纸</a></li>
+										<li><a href="vegetables.html">多媒体资源（如DVD，电子书等）</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">时间<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="vegetables.html">古代</a></li>
+										<li><a href="vegetables.html">20世纪</a></li>
+										<li><a href="vegetables.html">21世纪</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!-- <li><a href="#">地点</a></li> -->
+						<!-- <li><a href="#">受众</a></li> -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">地点<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">中国</a></li>
+										<li><a href="drinks.html">美国</a></li>
+										<li><a href="drinks.html">法国</a></li>
+										<!-- <li><a href="drinks.html">普通读者</a></li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">受众<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="drinks.html">学术研究者</a></li>
+										<li><a href="drinks.html">儿童</a></li>
+										<li><a href="drinks.html">青少年</a></li>
+										<li><a href="drinks.html">普通读者</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<!-- <li><a href="#">语言</a></li> -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">语言<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="#">中文</a></li>
+										<li><a href="#">英文</a></li>
+										<li><a href="#">法语</a></li>
+										<li><a href="#">多语言</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">学科<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="#">医学</a></li>
+										<li><a href="#">工程学</a></li>
+										<li><a href="#">哲学</a></li>
+										<li><a href="#">计算机科学</a></li>
+										<li><a href="#">生物统计学</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+		<div class="w3l_banner_nav_right">
+			<div class="w3l_banner_nav_right_banner5">
+				<!-- <h3>Best Deals For New Products<span class="blink_me"></span></h3> -->
+			</div>
+			<div class="w3l_banner_nav_right_banner3_btm">
+				<div class="col-md-4 w3l_banner_nav_right_banner3_btml">
+					<div class="view view-tenth">
+						<img src="images/19.jpg" alt=" " class="img-responsive" />
+						<div class="mask">
+							<h4>人文科学的全球意义与文化的复杂性:多学科进路</h4>
+							<p>文化大致可以从两种意义上来理解, 一种是人文意义上的文化, 其核心在于有意识地追求人的完美的理想。这样的文化是通过人文科学的教化和陶冶来实现的。然而,
+								文化要成为一种社会和历史力量, 就必须注入到所有人群, 绝不可为知识精英所专有, 这也是人文科学的全球意义所在。另一种是人类学意义上的文化,
+								是指某一特定民族的全部生活方式和品性。然而, 人类学不应只限于对习俗、习性及传统进行单纯的民族志描述,
+								而应当去探究历史、社会和环境因素造成的差异的深层原因和使各种人群既相同又不相同的根本原因。其关注点也应随着社会和时代的变化而转移。</p>
+						</div>
+					</div>
+					<h4>人文科学的全球意义与文化的复杂性:多学科进路</h4>
+					<ol>
+						<li>时间：21世纪</li>
+						<li>形式：书籍</li>
+						<li>地点：中国</li>
+						<li>受众：普通读者</li>
+						<li>语言： 中文</li>
+					</ol>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+			<!-- <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+				<h3 class="w3l_fruit">Fruits & Vegetables</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive"></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/29.png" alt=" " class="img-responsive" /></a>
+											<p>Fresh Bananas (1 kg)</p>
+											<h4>$10.00 <span>$12.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="29" data-name="Fresh bananas" data-summary="summary 29" data-price="10.00" data-quantity="1" data-image="images/29.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/30.png" alt=" " class="img-responsive" /></a>
+											<p>fresh cauliflower (2 no's)</p>
+											<h4>$5.00 <span>$8.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="30" data-name="Fresh cauliflower" data-summary="summary 30" data-price="5.00" data-quantity="1" data-image="images/30.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/31.png" alt=" " class="img-responsive" /></a>
+											<p>fresh brinjal bharta (1 kg)</p>
+											<h4>$2.00 <span>$3.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="31" data-name="Fresh brinjal bharta" data-summary="summary 31" data-price="2.00" data-quantity="1" data-image="images/31.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/32.png" alt=" " class="img-responsive" /></a>
+											<p>fresh sweet lime (500 gm)</p>
+											<h4>$6.00 <span>$7.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="32" data-name="Fresh sweet lime loose" data-summary="summary 32" data-price="6.00" data-quantity="1" data-image="images/32.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/9.png" alt=" " class="img-responsive" /></a>
+											<p>fresh spinach (palak)</p>
+											<h4>$2.00 <span>$3.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="9" data-name="Fresh spinach" data-summary="summary 9" data-price="2.00" data-quantity="1" data-image="images/9.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/10.png" alt=" " class="img-responsive" /></a>
+											<p>fresh mango dasheri (1 kg)</p>
+											<h4>$5.00 <span>$8.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="10" data-name="Fresh mango dasheri" data-summary="summary 10" data-price="5.00" data-quantity="1" data-image="images/10.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/11.png" alt=" " class="img-responsive" /></a>
+											<p>fresh apple red (1 kg)</p>
+											<h4>$6.00 <span>$8.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="11" data-name="Fresh apple red" data-summary="summary 11" data-price="6.00" data-quantity="1" data-image="images/11.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/12.png" alt=" " class="img-responsive" /></a>
+											<p>fresh broccoli (500 gm)</p>
+											<h4>$4.00 <span>$6.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="12" data-name="Fresh basket broccoli" data-summary="summary 12" data-price="4.00" data-quantity="1" data-image="images/12.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asdfdfd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/33.png" alt=" " class="img-responsive" /></a>
+											<p>fresh basket onion (1 kg)</p>
+											<h4>$5.00 <span>$7.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="33" data-name="Fresh basket onion" data-summary="summary 33" data-price="5.00" data-quantity="1" data-image="images/33.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/34.png" alt=" " class="img-responsive" /></a>
+											<p>fresh muskmelon (1 kg)</p>
+											<h4>$4.00 <span>$5.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="34" data-name="Fresh muskmelon stripped" data-summary="summary 34" data-price="4.00" data-quantity="1" data-image="images/34.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left w3ls_w3l_banner_left_asd">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/35.png" alt=" " class="img-responsive" /></a>
+											<p>fresh mushroom (500 ml)</p>
+											<h4>$11.00 <span>$15.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="35" data-name="Fresh basket mushroom" data-summary="summary 35" data-price="11.00" data-quantity="1" data-image="images/35.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="images/36.png" alt=" " class="img-responsive" /></a>
+											<p>fresh strawberry (1 pc)</p>
+											<h4>$7.00 <span>$9.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<button class="btn btn-danger my-cart-btn hvr-sweep-to-right" data-id="36" data-name="Fresh basket strawberry" data-summary="summary 36" data-price="7.00" data-quantity="1" data-image="images/36.png">Add to Cart</button>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div> -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- //banner -->
+	<!-- newsletter -->
+
+	<!-- //newsletter -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>information</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="#">Events</a></li>
+					<li><a href="about.html">关于我们</a></li>
+					<li><a href="#">Best Deals</a></li>
+
+					<li><a href="#">Short Codes</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policy info</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">terms of use</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>what in stores</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="#">Pet Food</a></li>
+					<li><a href="#">Frozen Snacks</a></li>
+					<li><a href="#">Kitchen</a></li>
+					<li><a href="#">Branded Foods</a></li>
+					<li><a href="#">Households</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>twitter posts</h3>
+				<ul class="w3_footer_grid_list1">
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a
+								href="#">http://sd.ds/13jklf#</a>
+							eius modi tempora incidunt ut labore et
+							<a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a
+								href="#">http://fd.uf/56hfg#</a>
+							eius modi tempora incidunt ut labore et
+							<a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% secure payments</h4>
+						<img src="images/card.png" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>connect with us</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>Copyright &copy; 2024.Company name  <a
+						href="#" target="_blank" title="BOOK">BOOK</a> - Collect from <a
+						href="#" title="BOOK" target="_blank">BOOK</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<script type="text/javascript" id="snipcart" src="js/snipcart.js"
+		data-api-key="ZGQxNzVjZTItOWRmNS00YjJhLTlmNGUtMDE4NjdiY2RmZGNj"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script type='text/javascript' src="js/jquery.mycart.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var goToCartIcon = function ($addTocartBtn) {
+				var $cartIcon = $(".my-cart-icon");
+				var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+				$addTocartBtn.prepend($image);
+				var position = $cartIcon.position();
+				$image.animate({
+
+				}, 500, "linear", function () {
+					$image.remove();
+				});
+			}
+
+			$('.my-cart-btn').myCart({
+				classCartIcon: 'my-cart-icon',
+				classCartBadge: 'my-cart-badge',
+				affixCartIcon: true,
+				checkoutCart: function (products) {
+					$.each(products, function () {
+						console.log(this);
+					});
+				},
+				clickOnAddToCart: function ($addTocart) {
+					goToCartIcon($addTocart);
+				},
+				getDiscountPrice: function (products) {
+					var total = 0;
+					$.each(products, function () {
+						total += this.quantity * this.price;
+					});
+					return total * 1;
+				}
+			});
+
+		});
+	</script>
+</body>
+
+</html>
